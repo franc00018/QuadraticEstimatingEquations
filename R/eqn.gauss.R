@@ -18,6 +18,6 @@
 #' @author Francois Pelletier
 eqn.gauss <- function(param,Y,meanf,variancef,dmean,dsd)
 {
-	a.gauss(param,variancef,dmean,dsd) * sum(Y-meanf(param)) +
-			b.gauss(param,variancef,dmean,dsd) * sum((Y-meanf(param))^2-variancef(param))
+	a.gauss(param,variancef,dmean) * sum(Y-meanf(param)) +
+			b.gauss(param,variancef,dsd) * sum((Y-meanf(param))^2-variancef(param))
 }

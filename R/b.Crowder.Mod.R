@@ -15,7 +15,7 @@
 #' @return First weighting vector
 #' 
 #' @author Francois Pelletier
-a.Crowder.Mod <- function(param,Y,variancef,dmean,dsd)
+b.Crowder.Mod <- function(param,Y,variancef,dmean,dsd)
 {
 	(moments::skewness(Y)*dmean(param)-2*dsd(param)) /
 			(variancef(param)^(3/2)*gammaf.Crowder.Mod(Y))

@@ -1,8 +1,8 @@
-\name{a.Crowder.Mod}
-\alias{a.Crowder.Mod}
-\title{First weighting vector of the modified quadratic estimating equation (Crowder)}
+\name{b.Crowder.Mod}
+\alias{b.Crowder.Mod}
+\title{Second weighting vector of the modified quadratic estimating equation (Crowder)}
 \usage{
-a.Crowder.Mod(param, Y, variancef, dmean, dsd)
+b.Crowder.Mod(param, Y, variancef, dmean, dsd)
 }
 \arguments{
   \item{param}{Vector of parameters of the distribution
@@ -22,8 +22,8 @@ a.Crowder.Mod(param, Y, variancef, dmean, dsd)
 First weighting vector
 }
 \description{
-First weighting vector of the modified quadratic estimating
-equation (Crowder)
+Second weighting vector of the modified quadratic
+estimating equation (Crowder)
 }
 \author{
 Francois Pelletier

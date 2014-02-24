@@ -20,14 +20,14 @@
 #' @author Francois Pelletier
 V.gauss <- function(param,Y,meanf,variancef,skewnessf,kurtosisf,dmean,dsd)
 {
-	(variancef(param)*(a.gauss(param,variancef,dmean,dsd) %o% 
-					a.gauss(param,variancef,dmean,dsd) + 
+	(variancef(param)*(a.gauss(param,variancef,dmean) %o% 
+					a.gauss(param,variancef,dmean) + 
 					sqrt(variancef(param)) * skewnessf(param) * 
-					(a.gauss(param,variancef,dmean,dsd) %o% 
-						b.gauss(param,variancef,dmean,dsd) +
-						b.gauss(param,variancef,dmean,dsd) %o% 
-						a.gauss(param,variancef,dmean,dsd)) + 
+					(a.gauss(param,variancef,dmean) %o% 
+						b.gauss(param,variancef,dsd) +
+						b.gauss(param,variancef,dsd) %o% 
+						a.gauss(param,variancef,dmean)) + 
 					variancef(param)*(kurtosis(param)+2) * 
-					b.gauss(param,variancef,dmean,dsd) %*% 
-					t(b.gauss(param,variancef,dmean,dsd))))
+					b.gauss(param,variancef,dsd) %*% 
+					t(b.gauss(param,variancef,dsd))))
 }

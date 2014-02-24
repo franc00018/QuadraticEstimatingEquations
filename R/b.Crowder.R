@@ -20,5 +20,5 @@ b.Crowder <- function(param,variancef,skewnessf,kurtosisf,dmean,dsd)
 {
 	(skewnessf(param)*dmean(param)-
 				2*dsd(param))/
-			(variancef(param)^(3/2)*gamma.Crowder(param,skewnessf,kurtosisf))	
+			(variancef(param)^(3/2)*gammaf.Crowder(param,skewnessf,kurtosisf))	
 }

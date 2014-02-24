@@ -17,6 +17,6 @@
 #' @author Francois Pelletier
 M.gauss <- function(param,Y,meanf,variancef,dmean,dsd)
 {
-	-(a.gauss(param,variancef,dmean,dsd) %o% dmean(param) + 
-				2*sqrt(variancef(param)) * b.gauss(param,variancef,dmean,dsd) %*% t(dsd(param)))
+	-(a.gauss(param,variancef,dmean) %o% dmean(param) + 
+				2*sqrt(variancef(param)) * b.gauss(param,variancef,dsd) %*% t(dsd(param)))
 }
