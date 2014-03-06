@@ -18,8 +18,8 @@
 #' @author Francois Pelletier
 obj.gauss <- function(param,Y,meanf,variancef,dmean,dsd,Q=diag(4))
 {
-	eqn.gauss(param,Y,meanf,variancef,dmean,dsd) %*% Q %*% 
-			eqn.gauss(param,Y,meanf,variancef,dmean,dsd)
+	as.vector(eqn.gauss(param,Y,meanf,variancef,dmean,dsd) %*% Q %*% 
+			eqn.gauss(param,Y,meanf,variancef,dmean,dsd))
 }
 
 
