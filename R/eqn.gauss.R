@@ -14,7 +14,7 @@
 #' @param dmean Derivative in respect to the parameter vector of the mean function of the distribution
 #' @param dsd Derivative in respect to the parameter vector of the standard deviation function of the distribution
 #' @return The vector value of the estimating equation
-#' 
+#' @export eqn.gauss
 #' @author Francois Pelletier
 eqn.gauss <- function(param,Y,meanf,variancef,dmean,dsd)
 {

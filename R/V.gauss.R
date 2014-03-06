@@ -16,7 +16,7 @@
 #' @param dmean Derivative in respect to the parameter vector of the mean function of the distribution
 #' @param dsd Derivative in respect to the parameter vector of the standard deviation function of the distribution 
 #' @return V Matrix
-#' 
+#' @export V.gauss
 #' @author Francois Pelletier
 V.gauss <- function(param,Y,meanf,variancef,skewnessf,kurtosisf,dmean,dsd)
 {

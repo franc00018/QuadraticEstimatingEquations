@@ -12,6 +12,7 @@
 #' @param V Covariance matrix of equations
 #' @param n Sample size
 #' @return Weighted covariance matrix
+#' @export covariance.QEE
 #' @author François Pelletier
 covariance.QEE <- function(M,V,n) ## Omega
 {

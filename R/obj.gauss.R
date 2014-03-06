@@ -14,7 +14,7 @@
 #' @param dsd Derivative in respect to the parameter vector of the standard deviation function of the distribution
 #' @param Q Weight matrix
 #' @return The value of the quadratic form
-#' 
+#' @export obj.gauss
 #' @author Francois Pelletier
 obj.gauss <- function(param,Y,meanf,variancef,dmean,dsd,Q=diag(4))
 {

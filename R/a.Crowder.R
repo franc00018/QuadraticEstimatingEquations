@@ -14,7 +14,7 @@
 #' @param dmean Derivative in respect to the parameter vector of the mean function of the distribution
 #' @param dsd Derivative in respect to the parameter vector of the standard deviation function of the distribution
 #' @return First weighting vector
-#' 
+#' @export a.Crowder
 #' @author Francois Pelletier
 a.Crowder <- function(param,variancef,skewnessf,kurtosisf,dmean,dsd)
 {

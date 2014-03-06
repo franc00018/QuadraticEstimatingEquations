@@ -16,7 +16,7 @@
 #' @param dsd Derivative in respect to the parameter vector of the standard deviation function of the distribution
 #' @param Q Weight matrix
 #' @return The value of the quadratic form
-#' 
+#' @export obj.Crowder
 #' @author Francois Pelletier
 obj.Crowder <- function(param,Y,meanf,variancef,skewnessf,kurtosisf,dmean,dsd,Q=diag(4))
 {

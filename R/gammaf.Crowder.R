@@ -11,7 +11,7 @@
 #' @param skewnessf Skewness function of the distribution
 #' @param kurtosisf Kurtosis function of the distribution
 #' @return Gamma function value
-#' 
+#' @export gammaf.Crowder
 #' @author Francois Pelletier
 gammaf.Crowder <- function(param,skewnessf,kurtosisf)
 {

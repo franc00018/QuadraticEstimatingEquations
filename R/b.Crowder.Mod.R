@@ -13,7 +13,7 @@
 #' @param dmean Derivative in respect to the parameter vector of the mean function of the distribution
 #' @param dsd Derivative in respect to the parameter vector of the standard deviation function of the distribution
 #' @return First weighting vector
-#' 
+#' @export b.Crowder.Mod
 #' @author Francois Pelletier
 b.Crowder.Mod <- function(param,Y,variancef,dmean,dsd)
 {

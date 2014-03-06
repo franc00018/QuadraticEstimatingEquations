@@ -15,7 +15,7 @@
 #' @param eqn.gradient Gradient matrix of the estimating equations
 #' @param alpha level of confidence
 #' @return A list containing the statistic, p-value and reject of the null hypothesis
-#' 
+#' @export Wald.Test
 #' @author François Pelletier
 Wald.Test <- function(param,n,R,r,eqn.covariance,eqn.gradient,alpha=0.05)
 {

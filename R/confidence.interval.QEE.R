@@ -12,7 +12,7 @@
 #' @param covariance Covariance matrix
 #' @param alpha confidence level
 #' @return 3 line matrix with lower bound, estimate and upper bound
-#' 
+#' @export confidence.interval.QEE
 #' @author François Pelletier
 confidence.interval.QEE <- function(param,covariance,n,alpha=0.05)
 {

@@ -9,7 +9,7 @@
 #' Gamma function used in Modified Crowder Estimating Equations
 #' @param Y Individual data sample
 #' @return Gamma function value
-#' 
+#' @export gammaf.Crowder.Mod
 #' @author Francois Pelletier
 gammaf.Crowder.Mod <- function(Y)
 {

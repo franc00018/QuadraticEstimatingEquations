@@ -14,7 +14,7 @@
 #' @param dmean Derivative in respect to the parameter vector of the mean function of the distribution
 #' @param dsd Derivative in respect to the parameter vector of the standard deviation function of the distribution
 #' @return The vector value of the estimating equation
-#' 
+#' @export eqn.Crowder.Mod
 #' @author Francois Pelletier
 eqn.Crowder.Mod <- function(param,Y,meanf,variancef,dmean,dsd)
 {

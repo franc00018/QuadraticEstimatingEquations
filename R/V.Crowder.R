@@ -15,7 +15,7 @@
 #' @param dmean Derivative in respect to the parameter vector of the mean function of the distribution
 #' @param dsd Derivative in respect to the parameter vector of the standard deviation function of the distribution 
 #' @return V Matrix
-#' 
+#' @export V.Crowder
 #' @author Francois Pelletier
 V.Crowder <- function(param,Y,variancef,skewnessf,kurtosisf,dmean,dsd)
 {
