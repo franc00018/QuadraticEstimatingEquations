@@ -18,6 +18,6 @@
 #' @author Francois Pelletier
 eqn.Crowder.Mod <- function(param,Y,meanf,variancef,dmean,dsd)
 {
-	a.Crowder.Mod(param,variancef,dmean,dsd) * sum(Y-meanf(param)) +
-			b.Crowder.Mod(param,variancef,dmean,dsd) * sum((Y-meanf(param))^2-variancef(param))
+	a.Crowder.Mod(param,Y,variancef,dmean,dsd) * sum(Y-meanf(param)) +
+			b.Crowder.Mod(param,Y,variancef,dmean,dsd) * sum((Y-meanf(param))^2-variancef(param))
 }
